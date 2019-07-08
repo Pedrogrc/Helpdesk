@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sistema de Helpdesk</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body class="container" style="background-color: #dadada">
+	<br>
+
+	<div class="p-3 mb-2 bg-secondary text-white" role="alert">
+		<h2 class="text-center">Helpdesk</h2>
+	</div>
+	<div class="card container bg-light">
+		<div>
+			<ul class="nav nav-tabs nav justify-content-center">
+				<li class="nav-item">
+					<a class="nav-link active" href="{% url 'index_url' %}">Início</a>
+					<!-- coloquei os '#' onde vc pode colocar o caminho o diretório onde vai estar o arquivo, caso queira.. -->
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="novo">Cadastrar chamado</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="lista">Lista de chamados</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<br>
+			<h4 class="text-center">Sobre o Sistema</h4>
+			<br>
+			<h5 class="text-center">O sistema de helpdesk é utilizado para cadastrar os chamados de suporte ao cliente.</h5>
+			<h5 class="text-center">Para realizar a operação, favor clicar no menu de cadastro de chamados.</h5>
+			
+			<h5 class="text-center">Para verificar os chamados já registrados no sistema, clique no menu de lista.</h5>
+			
+			<h5 class="text-center">O sistema foi desenvolvido para ser usado diretamente por um cliente do SENAI.</h5>
+			</br>
+
+		</div>
+
+	</div>
+
+</body>
+
+<footer>
+	<div class="card text-white" style="background-color: #480b48">
+		<h5 class="text-center">Desenvolvido por Beterraba System</h5>
+
+	</div>
+</footer>
+
+</html>
